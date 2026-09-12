@@ -1,0 +1,6 @@
+{
+  "name": "Union City Developers",
+  "description": "Union City Developers (Pvt) Ltd official website, property listings, and administration panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

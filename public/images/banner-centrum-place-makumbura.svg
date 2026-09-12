@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="bgGrad_13" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07182f"/>
+      <stop offset="50%" stop-color="#123869"/>
+      <stop offset="100%" stop-color="#040b17"/>
+    </linearGradient>
+    <linearGradient id="accentGrad_13" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#BAE6FD"/>
+    </linearGradient>
+    <radialGradient id="glow_13" cx="75%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid_13" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#38BDF8" stroke-width="0.75" stroke-opacity="0.08"/>
+    </pattern>
+    <filter id="shadow_13" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="480" fill="url(#bgGrad_13)"/>
+  <rect width="800" height="480" fill="url(#glow_13)"/>
+  <rect width="800" height="480" fill="url(#grid_13)"/>
+
+  
+      <!-- Tech and Blueprint Grid Graphics -->
+      <g opacity="0.35">
+        <line x1="450" y1="120" x2="760" y2="120" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4"/>
+        <line x1="450" y1="180" x2="760" y2="180" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4"/>
+        <line x1="450" y1="240" x2="760" y2="240" stroke="#38BDF8" stroke-width="1" stroke-dasharray="4 4"/>
+        <line x1="520" y1="80" x2="520" y2="300" stroke="#BAE6FD" stroke-width="1" stroke-dasharray="4 4"/>
+        <line x1="620" y1="80" x2="620" y2="300" stroke="#BAE6FD" stroke-width="1" stroke-dasharray="4 4"/>
+        <line x1="720" y1="80" x2="720" y2="300" stroke="#BAE6FD" stroke-width="1" stroke-dasharray="4 4"/>
+        <!-- Metro highway curve -->
+        <path d="M-40,390 Q 250,260 520,350 T 850,280" fill="none" stroke="#38BDF8" stroke-width="4"/>
+        <path d="M-40,405 Q 250,275 520,365 T 850,295" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="8 6"/>
+        <path d="M-40,420 Q 250,290 520,380 T 850,310" fill="none" stroke="#38BDF8" stroke-width="4"/>
+      </g>
+
+  <!-- Dark Bottom Contrast Layer -->
+  <rect y="210" width="800" height="270" fill="url(#bgGrad_13)" opacity="0.88"/>
+
+  <!-- Top Header: Brand Badge -->
+  <g transform="translate(36, 36)">
+    <rect width="216" height="32" rx="16" fill="rgba(0,0,0,0.45)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+    <circle cx="16" cy="16" r="6" fill="url(#accentGrad_13)"/>
+    <text x="32" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.5">UNION CITY DEVELOPERS</text>
+  </g>
+
+  <!-- Sold Out Red Badge -->
+  <g transform="translate(630, 32)" filter="url(#shadow_13)">
+    <rect width="134" height="34" rx="7" fill="#DC2626" stroke="#FECACA" stroke-width="1.5"/>
+    <text x="67" y="22" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11.5" font-weight="900" letter-spacing="2" text-anchor="middle">SOLD OUT</text>
+  </g>
+
+  <!-- Project Number Badge -->
+  <g transform="translate(36, 88)">
+    <rect width="72" height="24" rx="6" fill="rgba(56, 189, 248, 0.15)" stroke="#38BDF8" stroke-width="1"/>
+    <text x="36" y="16" fill="#BAE6FD" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="800" letter-spacing="1" text-anchor="middle">PRJ-14</text>
+  </g>
+
+  <!-- Location Badge Pill -->
+  <g transform="translate(118, 88)">
+    <rect width="200" height="24" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+    <circle cx="14" cy="12" r="4" fill="#38BDF8"/>
+    <text x="26" y="16" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="700">Kottawa, Makumbura</text>
+  </g>
+
+  <!-- Project Title -->
+  <text x="36" y="316" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Outfit, sans-serif" font-size="33" font-weight="900" letter-spacing="-0.5">Centrum Place Makumbura</text>
+
+  <!-- Highlights Line -->
+  <g transform="translate(36, 346)">
+    <line x1="0" y1="0" x2="32" y2="0" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+    <text x="44" y="4" fill="#CBD5E1" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="500">50m to Highlevel Rd • Walking distance to Multimodal Hub</text>
+  </g>
+
+  <!-- Meta Status Footer -->
+  <g transform="translate(36, 412)">
+    <rect width="728" height="40" rx="8" fill="rgba(0,0,0,0.55)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    <circle cx="22" cy="20" r="9" fill="#10B981"/>
+    <path d="M 18 20 L 21 23 L 27 17" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="40" y="24" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700">100% Sold Out &amp; Successfully Handed Over</text>
+    <text x="700" y="24" fill="#BAE6FD" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="end">CLEAR DEEDS • GATED EXCELLENCE</text>
+  </g>
+</svg>

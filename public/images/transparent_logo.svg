@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+  <defs>
+    <!-- Left vertical blue bar -->
+    <linearGradient id="blueLeftBar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0080f5" />
+      <stop offset="45%" stop-color="#006ae6" />
+      <stop offset="100%" stop-color="#0050cc" />
+    </linearGradient>
+
+    <!-- Top fold (darker blue inner fold) -->
+    <linearGradient id="blueInnerFold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0046b8" />
+      <stop offset="70%" stop-color="#0055d6" />
+      <stop offset="100%" stop-color="#0066eb" />
+    </linearGradient>
+
+    <!-- Top right curved tab -->
+    <linearGradient id="blueTopTab" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#0066ee" />
+      <stop offset="60%" stop-color="#0088ff" />
+      <stop offset="100%" stop-color="#0099ff" />
+    </linearGradient>
+
+    <!-- Bottom horizontal green bar -->
+    <linearGradient id="greenBottomBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#72c400" />
+      <stop offset="50%" stop-color="#79cd00" />
+      <stop offset="100%" stop-color="#82d600" />
+    </linearGradient>
+
+    <!-- Right green pillar (vertical) -->
+    <linearGradient id="greenRightPillar" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#62ab00" />
+      <stop offset="40%" stop-color="#70c000" />
+      <stop offset="80%" stop-color="#80d500" />
+      <stop offset="100%" stop-color="#93e800" />
+    </linearGradient>
+
+    <!-- Bottom-right inner fold / vertical green shadow -->
+    <linearGradient id="greenFoldShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f8f00" />
+      <stop offset="100%" stop-color="#60a800" />
+    </linearGradient>
+
+    <!-- Subtle highlight bevels -->
+    <linearGradient id="topBevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Top Blue Horizontal Fold Base (connects behind left pillar to top tab) -->
+  <path d="M 296 110 
+           L 728 110 
+           C 728 110 728 200 600 250 
+           C 490 292 370 312 296 312 
+           Z" fill="url(#blueInnerFold)" />
+
+  <!-- 2. Top-Right Curved Blue Tab (the smooth upper right flap) -->
+  <path d="M 296 110 
+           L 670 110 
+           C 706 110 730 134 730 162 
+           C 730 190 690 246 560 278 
+           C 440 308 340 312 296 312 
+           L 296 110 Z" fill="url(#blueTopTab)" />
+
+  <!-- 3. Left Vertical Blue Pillar -->
+  <!-- Outer rounded corner at top-left, straight down to bottom-left 45-deg seam -->
+  <path d="M 195 110 
+           C 134 110 84 160 84 221 
+           L 84 810 
+           C 84 845 104 868 135 874 
+           L 296 668 
+           L 296 110 
+           Z" fill="url(#blueLeftBar)" />
+
+  <!-- 4. Bottom Horizontal Green Bar -->
+  <!-- Starts at 45-deg seam (135, 874) and (296, 668), goes across to right -->
+  <path d="M 135 874 
+           C 152 878 172 880 195 880 
+           L 700 880 
+           L 700 668 
+           L 296 668 
+           Z" fill="url(#greenBottomBar)" />
+
+  <!-- 5. Right Green Pillar (rises from bottom, rounds at bottom-right, extends up with slanted top) -->
+  <path d="M 700 880 
+           L 805 880 
+           C 866 880 916 830 916 769 
+           L 916 230 
+           L 700 436 
+           L 700 880 
+           Z" fill="url(#greenRightPillar)" />
+
+  <!-- 6. Bottom Right Fold Shadow (subtle depth transition between bottom bar & right pillar) -->
+  <path d="M 700 668 
+           L 700 880 
+           L 740 880 
+           L 740 668 
+           Z" fill="url(#greenFoldShadow)" opacity="0.3" />
+</svg>

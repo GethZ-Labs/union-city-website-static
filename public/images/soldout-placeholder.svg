@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none">
+  <defs>
+    <linearGradient id="soldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1c17" />
+      <stop offset="100%" stop-color="#123528" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#soldBg)" />
+  <circle cx="300" cy="160" r="60" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="2" />
+  <path d="M280 160 L295 175 L325 145" stroke="#34d399" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <text x="300" y="260" fill="#f8fafc" font-family="Plus Jakarta Sans, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Union City Development</text>
+  <text x="300" y="290" fill="#94a3b8" font-family="Plus Jakarta Sans, sans-serif" font-size="15" text-anchor="middle">100% Sold &amp; Handed Over</text>
+</svg>
