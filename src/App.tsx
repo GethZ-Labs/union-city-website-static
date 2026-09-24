@@ -15,6 +15,7 @@ import { LandsView } from './views/LandsView';
 import { AboutView } from './views/AboutView';
 import { CareersView } from './views/CareersView';
 import { ContactView } from './views/ContactView';
+import { SamplesView } from './views/SamplesView';
 import { AdminView } from './views/AdminView';
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
   // Current page
   const [currentPage, setCurrentPage] = useState<ActivePage>(() => {
     const hash = window.location.hash.replace('#', '').toLowerCase();
-    if (['home', 'lands', 'about', 'careers', 'contact', 'admin'].includes(hash)) {
+    if (['home', 'lands', 'samples', 'about', 'careers', 'contact', 'admin'].includes(hash)) {
       return hash as ActivePage;
     }
     return 'home';
@@ -104,21 +105,22 @@ export default function App() {
 
     // Update document title dynamically
     const titles: Record<ActivePage, string> = {
-      home: 'Union City Developers (Pvt) Ltd | Home',
-      lands: 'Properties & Lands | Union City Developers',
-      about: 'About Us | Union City Developers',
-      careers: 'Careers | Union City Developers',
-      contact: 'Contact Us | Union City Developers',
-      admin: 'Admin Portal | Union City Developers',
+      home: 'Union Home | Real Estate & Properties',
+      lands: 'Properties & Lands | Union Home',
+      samples: 'Sample Plans & Plots | Union Home',
+      about: 'About Us | Union Home',
+      careers: 'Careers | Union Home',
+      contact: 'Contact Us | Union Home',
+      admin: 'Admin Portal | Union Home',
     };
-    document.title = titles[currentPage] || 'Union City Developers (Pvt) Ltd';
+    document.title = titles[currentPage] || 'Union Home (Pvt) Ltd';
   }, [currentPage]);
 
   // Listen to hash changes (e.g. browser back/forward)
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '').toLowerCase();
-      if (['home', 'lands', 'about', 'careers', 'contact', 'admin'].includes(hash)) {
+      if (['home', 'lands', 'samples', 'about', 'careers', 'contact', 'admin'].includes(hash)) {
         setCurrentPage(hash as ActivePage);
       }
     };
@@ -242,6 +244,14 @@ export default function App() {
             soldOutProjects={soldOutProjects}
             initialFilterLocation={searchLocationFilter}
             onInquire={handleInquireProject}
+            onViewSamples={() => handleNavigate('samples')}
+          />
+        )}
+
+        {currentPage === 'samples' && (
+          <SamplesView
+            onNavigate={handleNavigate}
+            onInquirePlot={handleInquireProject}
           />
         )}
 

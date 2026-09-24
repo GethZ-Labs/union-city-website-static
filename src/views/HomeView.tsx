@@ -31,7 +31,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="hero-eyebrow">SRI LANKA'S MOST TRUSTED LAND PARTNER</div>
           <h1 className="hero-title">A UNION OF TRUST.</h1>
           <p className="hero-subtitle">
-            Union City Developers — Dedicated to unwavering trust, clear legal deeds, and lasting value
+            Union Home — Dedicated to unwavering trust, clear legal deeds, and lasting value
             across prime residential locations.
           </p>
 
@@ -39,7 +39,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
               <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
             </svg>
-            <span>Trusted by Over 700+ Families Since 2015</span>
+            <span>Trusted by Over 700+ Families Since 2020</span>
           </div>
 
           {/* Centered Property Search Bar */}

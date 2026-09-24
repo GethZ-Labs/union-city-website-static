@@ -8,6 +8,7 @@ interface LandsViewProps {
   soldOutProjects: SoldOutProject[];
   initialFilterLocation?: string;
   onInquire: (projectName: string) => void;
+  onViewSamples?: () => void;
 }
 
 export const LandsView: React.FC<LandsViewProps> = ({
@@ -16,6 +17,7 @@ export const LandsView: React.FC<LandsViewProps> = ({
   soldOutProjects,
   initialFilterLocation = '',
   onInquire,
+  onViewSamples,
 }) => {
   const [filterLocation, setFilterLocation] = useState(initialFilterLocation);
   const [searchTerm, setSearchTerm] = useState('');
@@ -149,6 +151,54 @@ export const LandsView: React.FC<LandsViewProps> = ({
           Showing {filteredOngoing.length} ongoing &bull; {filteredSoldOut.length} completed
         </div>
       </div>
+
+      {/* Samples & Block-Out Plans Banner */}
+      {onViewSamples && (
+        <div
+          style={{
+            maxWidth: '1240px',
+            margin: '0 auto 28px',
+            padding: '16px 20px',
+            background: 'linear-gradient(90deg, rgba(2, 132, 199, 0.15) 0%, rgba(37, 211, 102, 0.08) 100%)',
+            border: '1px solid rgba(56, 189, 248, 0.3)',
+            borderRadius: '16px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '14px',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <span style={{ fontSize: '1.6rem' }}>📐</span>
+            <div>
+              <div style={{ color: '#fff', fontWeight: 700, fontSize: '0.98rem' }}>
+                Looking for Sample Block-Out Plans &amp; Legal Title Specs?
+              </div>
+              <div style={{ color: 'var(--text-muted)', fontSize: '0.84rem' }}>
+                View our interactive 8–15 perch sample layouts, clear deed standards, and site utilities.
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={onViewSamples}
+            style={{
+              background: '#0284c7',
+              color: '#fff',
+              fontWeight: 700,
+              fontSize: '0.86rem',
+              padding: '8px 18px',
+              borderRadius: '24px',
+              border: 'none',
+              cursor: 'pointer',
+              transition: 'all 0.2s ease',
+            }}
+          >
+            Explore Samples &amp; Plans &rarr;
+          </button>
+        </div>
+      )}
 
       {/* ============ ON GOING PROJECTS ============ */}
       <section className="section reveal reveal-visible" id="landsOngoingSection">

@@ -1,101 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
   <defs>
-    <!-- Left vertical blue bar -->
-    <linearGradient id="blueLeftBar" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0080f5" />
-      <stop offset="45%" stop-color="#006ae6" />
-      <stop offset="100%" stop-color="#0050cc" />
+    <!-- Cyan to Blue Gradient -->
+    <linearGradient id="uhBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="60%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
     </linearGradient>
 
-    <!-- Top fold (darker blue inner fold) -->
-    <linearGradient id="blueInnerFold" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0046b8" />
-      <stop offset="70%" stop-color="#0055d6" />
-      <stop offset="100%" stop-color="#0066eb" />
+    <!-- Emerald to Forest Green Gradient -->
+    <linearGradient id="uhGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
     </linearGradient>
 
-    <!-- Top right curved tab -->
-    <linearGradient id="blueTopTab" x1="0%" y1="0%" x2="100%" y2="50%">
-      <stop offset="0%" stop-color="#0066ee" />
-      <stop offset="60%" stop-color="#0088ff" />
-      <stop offset="100%" stop-color="#0099ff" />
+    <!-- Warm Golden Amber Accent Gradient -->
+    <linearGradient id="uhGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
     </linearGradient>
 
-    <!-- Bottom horizontal green bar -->
-    <linearGradient id="greenBottomBar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#72c400" />
-      <stop offset="50%" stop-color="#79cd00" />
-      <stop offset="100%" stop-color="#82d600" />
-    </linearGradient>
-
-    <!-- Right green pillar (vertical) -->
-    <linearGradient id="greenRightPillar" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#62ab00" />
-      <stop offset="40%" stop-color="#70c000" />
-      <stop offset="80%" stop-color="#80d500" />
-      <stop offset="100%" stop-color="#93e800" />
-    </linearGradient>
-
-    <!-- Bottom-right inner fold / vertical green shadow -->
-    <linearGradient id="greenFoldShadow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4f8f00" />
-      <stop offset="100%" stop-color="#60a800" />
-    </linearGradient>
-
-    <!-- Subtle highlight bevels -->
-    <linearGradient id="topBevel" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
-    </linearGradient>
+    <!-- Subtle Drop Shadow -->
+    <filter id="uhShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0284c7" flood-opacity="0.25" />
+    </filter>
   </defs>
 
-  <!-- 1. Top Blue Horizontal Fold Base (connects behind left pillar to top tab) -->
-  <path d="M 296 110 
-           L 728 110 
-           C 728 110 728 200 600 250 
-           C 490 292 370 312 296 312 
-           Z" fill="url(#blueInnerFold)" />
+  <!-- Outer Protective Modern Shield Ring (Subtle) -->
+  <circle cx="250" cy="250" r="235" fill="none" stroke="#38bdf8" stroke-width="6" stroke-opacity="0.12" />
+  
+  <!-- Left Wing / Union Pillar (Emerald Green) -->
+  <path d="M 110 370 
+           L 110 240 
+           C 110 220 125 204 144 198 
+           L 242 165 
+           C 248 163 254 163 260 165 
+           L 290 175 
+           L 250 205 
+           L 185 228 
+           C 178 230 172 237 172 245 
+           L 172 370 
+           C 172 376 167 380 161 380 
+           L 121 380 
+           C 115 380 110 376 110 370 Z" 
+        fill="url(#uhGreenGrad)" />
 
-  <!-- 2. Top-Right Curved Blue Tab (the smooth upper right flap) -->
-  <path d="M 296 110 
-           L 670 110 
-           C 706 110 730 134 730 162 
-           C 730 190 690 246 560 278 
-           C 440 308 340 312 296 312 
-           L 296 110 Z" fill="url(#blueTopTab)" />
+  <!-- Main House Gable & Right Arch (Sapphire Blue) -->
+  <path d="M 250 82 
+           L 380 190 
+           C 388 197 392 207 392 218 
+           L 392 370 
+           C 392 376 387 380 381 380 
+           L 335 380 
+           C 329 380 324 376 324 370 
+           L 324 235 
+           C 324 228 320 221 314 216 
+           L 250 162 
+           L 186 216 
+           C 180 221 176 228 176 235 
+           L 176 275 
+           L 130 250 
+           L 240 92 
+           C 246 87 254 87 260 92 Z" 
+        fill="url(#uhBlueGrad)" 
+        filter="url(#uhShadow)" />
 
-  <!-- 3. Left Vertical Blue Pillar -->
-  <!-- Outer rounded corner at top-left, straight down to bottom-left 45-deg seam -->
-  <path d="M 195 110 
-           C 134 110 84 160 84 221 
-           L 84 810 
-           C 84 845 104 868 135 874 
-           L 296 668 
-           L 296 110 
-           Z" fill="url(#blueLeftBar)" />
+  <!-- Central Sanctuary / Chimney / Horizon Geometry -->
+  <path d="M 315 135 
+           L 345 135 
+           L 345 170 
+           L 315 145 Z" 
+        fill="url(#uhBlueGrad)" opacity="0.8" />
 
-  <!-- 4. Bottom Horizontal Green Bar -->
-  <!-- Starts at 45-deg seam (135, 874) and (296, 668), goes across to right -->
-  <path d="M 135 874 
-           C 152 878 172 880 195 880 
-           L 700 880 
-           L 700 668 
-           L 296 668 
-           Z" fill="url(#greenBottomBar)" />
+  <!-- Interlocking Central Heart / Foundation Key (Geometric Doorway to Prosperity) -->
+  <path d="M 215 380 
+           L 215 285 
+           C 215 265 230 250 250 250 
+           C 270 250 285 265 285 285 
+           L 285 380 
+           Z" 
+        fill="url(#uhGoldGrad)" />
 
-  <!-- 5. Right Green Pillar (rises from bottom, rounds at bottom-right, extends up with slanted top) -->
-  <path d="M 700 880 
-           L 805 880 
-           C 866 880 916 830 916 769 
-           L 916 230 
-           L 700 436 
-           L 700 880 
-           Z" fill="url(#greenRightPillar)" />
+  <!-- Door Arch Inset -->
+  <path d="M 235 380 
+           L 235 295 
+           C 235 287 242 280 250 280 
+           C 258 280 265 287 265 295 
+           L 265 380 
+           Z" 
+        fill="#041226" opacity="0.8" />
 
-  <!-- 6. Bottom Right Fold Shadow (subtle depth transition between bottom bar & right pillar) -->
-  <path d="M 700 668 
-           L 700 880 
-           L 740 880 
-           L 740 668 
-           Z" fill="url(#greenFoldShadow)" opacity="0.3" />
+  <!-- Sun Rising / Vitality Dot -->
+  <circle cx="250" cy="120" r="14" fill="url(#uhGoldGrad)" />
 </svg>

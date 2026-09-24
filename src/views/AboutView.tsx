@@ -3,9 +3,9 @@ import React from 'react';
 export const AboutView: React.FC = () => {
   return (
     <div className="content-page" id="aboutPage">
-      <h1>About Union City Developers</h1>
+      <h1>About Union Home</h1>
       <p>
-        Since 2015, Union City Developers (Pvt) Ltd has helped thousands of families and investors
+        Since 2020, Union Home has helped thousands of families and investors
         find land they can build their futures on. We specialize in identifying, developing, and
         delivering trusted land properties across residential, commercial, and agricultural categories.
       </p>
@@ -21,7 +21,7 @@ export const AboutView: React.FC = () => {
       <div className="content-card reveal reveal-visible" id="whyChooseUsCard">
         <h3>Why Choose Us</h3>
         <p style={{ lineHeight: '1.9' }}>
-          ✔ Years of trusted service since 2015
+          ✔ Years of trusted service since 2020
           <br />
           ✔ Hundreds of completed property transactions
           <br />
@@ -73,7 +73,7 @@ export const AboutView: React.FC = () => {
               🤝 Long-Term Trust
             </h4>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-body)' }}>
-              A decade of standing by our buyers, providing continuous guidance through deed transfers and banking.
+              Years of standing by our buyers, providing continuous guidance through deed transfers and banking since 2020.
             </p>
           </div>
         </div>

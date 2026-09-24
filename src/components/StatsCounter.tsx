@@ -129,9 +129,9 @@ export const StatsCounter: React.FC = () => {
       />
 
       <CounterItem
-        target={10}
+        target={6}
         label="Years of Trust"
-        sub="Serving Since 2015"
+        sub="Serving Since 2020"
         icon={
           <svg
             viewBox="0 0 24 24"

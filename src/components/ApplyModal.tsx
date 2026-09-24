@@ -6,8 +6,8 @@ interface ApplyModalProps {
   onClose: () => void;
 }
 
-const WHATSAPP_NUMBER = '+94777800551';
-const FORMATTED_PHONE = '+94 77 780 0551';
+const WHATSAPP_NUMBER = '+94 0xxxxxxxxx';
+const FORMATTED_PHONE = '+94 0xxxxxxxxx';
 
 const WHATSAPP_SVG = (
   <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
@@ -25,8 +25,8 @@ export const ApplyModal: React.FC<ApplyModalProps> = ({
   if (!isOpen) return null;
 
   const roleName = position || 'Site Officer';
-  const whatsappUrl = `https://wa.me/94777800551?text=${encodeURIComponent(
-    `Hello Union City Developers, I would like to apply for the ${roleName} position. Please find my CV attached.`
+  const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(
+    `Hello Union Home, I would like to apply for the ${roleName} position. Please find my CV attached.`
   )}`;
 
   const handleCopyNumber = () => {

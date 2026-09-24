@@ -46,12 +46,7 @@
   <!-- Dark Bottom Contrast Layer -->
   <rect y="210" width="800" height="270" fill="url(#bgGrad_15)" opacity="0.88"/>
 
-  <!-- Top Header: Brand Badge -->
-  <g transform="translate(36, 36)">
-    <rect width="216" height="32" rx="16" fill="rgba(0,0,0,0.45)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
-    <circle cx="16" cy="16" r="6" fill="url(#accentGrad_15)"/>
-    <text x="32" y="21" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.5">UNION CITY DEVELOPERS</text>
-  </g>
+
 
   <!-- Sold Out Red Badge -->
   <g transform="translate(630, 32)" filter="url(#shadow_15)">

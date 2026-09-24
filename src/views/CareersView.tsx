@@ -4,8 +4,8 @@ interface CareersViewProps {
   onOpenApplyModal: (position: string) => void;
 }
 
-const WHATSAPP_NUMBER = '+94777800551';
-const FORMATTED_PHONE = '+94 77 780 0551';
+const WHATSAPP_NUMBER = '+94 0xxxxxxxxx';
+const FORMATTED_PHONE = '+94 0xxxxxxxxx';
 
 const WHATSAPP_SVG = (
   <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
@@ -14,13 +14,13 @@ const WHATSAPP_SVG = (
 );
 
 export const CareersView: React.FC<CareersViewProps> = ({ onOpenApplyModal }) => {
-  const whatsappUrl = `https://wa.me/94777800551?text=${encodeURIComponent(
-    'Hello Union City Developers, I would like to apply for the Site Officer position. Please find my CV attached.'
+  const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(
+    'Hello Union Home, I would like to apply for the Site Officer position. Please find my CV attached.'
   )}`;
 
   return (
     <div className="content-page" id="careersPage" style={{ maxWidth: '880px', margin: '0 auto', padding: '40px 20px' }}>
-      <h1 className="page-title" style={{ textAlign: 'center' }}>Careers at Union City</h1>
+      <h1 className="page-title" style={{ textAlign: 'center' }}>Careers at Union Home</h1>
       <p className="content-subtitle" style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 36px' }}>
         Join our team delivering trusted residential land developments across Sri Lanka.
       </p>

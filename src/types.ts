@@ -26,7 +26,7 @@ export interface SoldOutProject {
 export interface ContactMessage {
   id: string;
   name: string;
-  email: string;
+  email?: string;
   phone?: string;
   message: string;
   date: string;
@@ -37,7 +37,7 @@ export interface CareerApplication {
   id: string;
   position: string;
   name: string;
-  email: string;
+  email?: string;
   phone?: string;
   resumeFileName?: string;
   message?: string;
@@ -45,5 +45,5 @@ export interface CareerApplication {
   status: 'new' | 'reviewed';
 }
 
-export type ActivePage = 'home' | 'lands' | 'about' | 'careers' | 'contact' | 'admin';
+export type ActivePage = 'home' | 'lands' | 'samples' | 'about' | 'careers' | 'contact' | 'admin';
 export type AppTheme = 'green' | 'blue';

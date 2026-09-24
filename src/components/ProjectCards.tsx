@@ -16,7 +16,7 @@ const FB_SVG = (
 export const OngoingCard: React.FC<{
   project: OngoingProject;
 }> = ({ project }) => {
-  const fbUrl = project.link || 'https://www.facebook.com/unioncitydevelopers';
+  const fbUrl = project.link || 'https://www.facebook.com';
 
   return (
     <div className="listing-card" id={`project-${project.id}`}>
@@ -33,9 +33,7 @@ export const OngoingCard: React.FC<{
             alt={project.name}
             onError={(e) => {
               const target = e.currentTarget;
-              if (project.fbImage && target.src !== project.fbImage) {
-                target.src = project.fbImage;
-              }
+              target.src = '/images/ongoing-pasyala.jpg';
             }}
           />
         </a>
@@ -63,7 +61,7 @@ export const OngoingCard: React.FC<{
             style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
           >
             {FB_SVG}
-            View Project on Facebook
+            View on Facebook
           </a>
         </div>
       </div>
@@ -139,7 +137,7 @@ export const PrimeFacilities: React.FC = () => {
           </div>
           <h2>Every Plot Selected for Strategic Value &amp; Unquestioned Legality</h2>
           <p className="facility-subtitle">
-            At Union City Developers, every project undergoes strict legal vetting and urban planning compliance before release.
+            At Union Home, every project undergoes strict legal vetting and urban planning compliance before release.
           </p>
         </div>
 
@@ -178,9 +176,9 @@ export const PrimeFacilities: React.FC = () => {
 
           <div className="facility-item">
             <div className="facility-icon">🛡️</div>
-            <h3>10+ Years of Unbroken Trust</h3>
+            <h3>Years of Unbroken Trust Since 2020</h3>
             <p>
-              Over 700+ satisfied families and investors have built their homes on Union City developments since 2015 without a single legal contestation.
+              Over 700+ satisfied families and investors have built their homes on Union Home developments since 2020 without a single legal contestation.
             </p>
           </div>
 

@@ -42,7 +42,7 @@ export const AdminView: React.FC<AdminViewProps> = ({
   const [newOngoingName, setNewOngoingName] = useState('');
   const [newOngoingLocation, setNewOngoingLocation] = useState('');
   const [newOngoingPrice, setNewOngoingPrice] = useState('');
-  const [newOngoingImage, setNewOngoingImage] = useState('/images/banner-pasyala.jpg');
+  const [newOngoingImage, setNewOngoingImage] = useState('/images/ongoing-pasyala.jpg');
 
   // Coming Soon Form State
   const [newSoonLocation, setNewSoonLocation] = useState('');
@@ -71,8 +71,8 @@ export const AdminView: React.FC<AdminViewProps> = ({
       name: newOngoingName,
       location: newOngoingLocation,
       pricePerPerch: newOngoingPrice || 'Rs. 250,000',
-      image: newOngoingImage || '/images/banner-pasyala.jpg',
-      link: 'https://www.facebook.com/unioncitydevelopers',
+      image: newOngoingImage || '/images/ongoing-pasyala.jpg',
+      link: 'https://www.facebook.com',
       amenities: ['⚡ 3-Phase Electricity', '💧 Pipe Water', '📜 Clear Deed'],
     };
     onUpdateOngoing([newProj, ...ongoingProjects]);
@@ -150,12 +150,12 @@ export const AdminView: React.FC<AdminViewProps> = ({
         <div className="admin-login-card">
           <img
             src="/images/transparent_logo.svg"
-            alt="Union City Developers logo"
+            alt="Union Home logo"
             className="admin-login-logo"
             style={{ margin: '0 auto 16px', display: 'block', height: '60px' }}
           />
           <h1>Admin Portal</h1>
-          <p className="admin-login-sub">Union City Developers (Pvt) Ltd</p>
+          <p className="admin-login-sub">Union Home (Pvt) Ltd</p>
 
           <form onSubmit={handleLogin}>
             <label>
@@ -230,9 +230,9 @@ export const AdminView: React.FC<AdminViewProps> = ({
         <div>
           {/* Logo & Brand */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '0 8px 24px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
-            <img src="/images/transparent_logo.svg" alt="Logo" style={{ height: '38px' }} />
+            <img src="/images/transparent_logo.svg" alt="Union Home Logo" style={{ height: '38px' }} />
             <div>
-              <div style={{ fontWeight: 800, fontSize: '1rem', color: '#fff' }}>Union City</div>
+              <div style={{ fontWeight: 800, fontSize: '1rem', color: '#fff' }}>Union Home</div>
               <div style={{ fontSize: '0.65rem', color: '#38bdf8', fontWeight: 700 }}>ADMIN PORTAL</div>
             </div>
           </div>
@@ -480,8 +480,14 @@ export const AdminView: React.FC<AdminViewProps> = ({
                           </span>
                         )}
                         <div style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '2px' }}>
-                          ✉️ <a href={`mailto:${msg.email}`} style={{ color: '#0284c7' }}>{msg.email}</a>
-                          {msg.phone && <span> &bull; 📞 <a href={`tel:${msg.phone}`} style={{ color: '#0284c7' }}>{msg.phone}</a></span>}
+                          {msg.email ? (
+                            <>
+                              ✉️ <a href={`mailto:${msg.email}`} style={{ color: '#0284c7' }}>{msg.email}</a>
+                              {msg.phone && <span> &bull; 📞 <a href={`tel:${msg.phone}`} style={{ color: '#0284c7' }}>{msg.phone}</a></span>}
+                            </>
+                          ) : (
+                            msg.phone && <span>📞 <a href={`tel:${msg.phone}`} style={{ color: '#0284c7' }}>{msg.phone}</a></span>
+                          )}
                         </div>
                       </div>
                       <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>{msg.date}</span>
@@ -577,7 +583,7 @@ export const AdminView: React.FC<AdminViewProps> = ({
 
                     <div style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end', marginTop: '14px' }}>
                       <a
-                        href={`mailto:${app.email}?subject=Union City Developers Application - ${app.position}`}
+                        href={`mailto:${app.email}?subject=Union Home Application - ${app.position}`}
                         style={{
                           background: '#0284c7',
                           color: '#fff',
@@ -654,15 +660,15 @@ export const AdminView: React.FC<AdminViewProps> = ({
                   />
                 </div>
                 <div>
-                  <label style={{ fontSize: '0.8rem', fontWeight: 700, color: '#475569' }}>Banner Image</label>
+                  <label style={{ fontSize: '0.8rem', fontWeight: 700, color: '#475569' }}>Project Image</label>
                   <select
                     value={newOngoingImage}
                     onChange={(e) => setNewOngoingImage(e.target.value)}
                     style={{ width: '100%', padding: '9px 12px', border: '1px solid #cbd5e1', borderRadius: '6px', marginTop: '4px' }}
                   >
-                    <option value="/images/banner-pasyala.jpg">Pasyala Banner (JPG)</option>
-                    <option value="/images/banner-green-garden.jpg">Green Garden Banner (JPG)</option>
-                    <option value="/images/banner-bandaragama.jpg">Bandaragama Banner (JPG)</option>
+                    <option value="/images/ongoing-pasyala.jpg">Pasyala Land (Photo)</option>
+                    <option value="/images/ongoing-green-garden.jpg">Green Garden (Photo)</option>
+                    <option value="/images/ongoing-bandaragama.jpg">Bandaragama Land (Photo)</option>
                     <option value="/images/banner-union25-homagama.svg">Homagama SVG</option>
                   </select>
                 </div>
@@ -892,14 +898,14 @@ export const AdminView: React.FC<AdminViewProps> = ({
           <div style={{ maxWidth: '600px', background: '#fff', padding: '28px', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
             <h3 style={{ margin: '0 0 14px', fontSize: '1.2rem' }}>Local Data Management</h3>
             <p style={{ fontSize: '0.9rem', color: '#64748b', lineHeight: '1.6' }}>
-              All projects, client contact inquiries, and career job applications are saved persistently in your browser's LocalStorage. If you want to reset all modifications back to the default Union City data, use the button below:
+              All projects, client contact inquiries, and career job applications are saved persistently in your browser's LocalStorage. If you want to reset all modifications back to the default Union Home prototype data, use the button below:
             </p>
 
             <div style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid #e2e8f0' }}>
               <button
                 type="button"
                 onClick={() => {
-                  if (window.confirm('Reset all projects and messages to the default Union City repository dataset?')) {
+                  if (window.confirm('Reset all projects and messages to the default Union Home repository dataset?')) {
                     onResetData();
                     alert('Data restored to initial defaults successfully!');
                   }
@@ -915,7 +921,7 @@ export const AdminView: React.FC<AdminViewProps> = ({
                   cursor: 'pointer',
                 }}
               >
-                Reset to Default Union City Dataset
+                Reset to Default Union Home Dataset
               </button>
             </div>
           </div>

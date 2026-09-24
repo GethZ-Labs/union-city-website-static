@@ -6,30 +6,54 @@ export const INITIAL_ONGOING_PROJECTS: OngoingProject[] = [
     name: 'City View Pasyala',
     location: 'Pasyala',
     pricePerPerch: 'Rs. 225,000',
-    image: '/images/banner-pasyala.jpg',
-    fbImage: 'https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/516590382_1291032293021811_8298990372059328943_n.jpg?stp=dst-jpg_tt6&cstp=mx915x636&ctp=s915x636&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Eihlo2DWdY8Q7kNvwFuFk-n&_nc_oc=Adoxx0WwHP-cGgwfoB4NzlwLL4NBVE7kNM1MCPFzZpxAKwT9sNiLRXSvnYwZbVQA8eXoRNMJ1CajMecUrwImCXO_&_nc_zt=23&_nc_ht=scontent.fcmb1-2.fna&_nc_gid=eAjR8lv2Eq92i--OrtPNqw&_nc_ss=7b2a8&oh=00_AQJWrHdDfYMG7lCrwI8_Z-LUCkZc5tx2x0UxhTpKuTj20A&oe=6AA9F15B',
-    link: 'https://www.facebook.com/unioncitydevelopers',
-    amenities: ['⚡ 3-Phase Electricity', '💧 Pipe Water', '📜 Clear Deed']
+    image: '/images/ongoing-pasyala.jpg',
+    link: 'https://www.facebook.com',
+    amenities: ['⚡ 3-Phase Electricity', '💧 Pipe Water', '📜 Clear Deed', '🛣️ 20ft Wide Access']
   },
   {
     id: 'ongoing-2',
     name: 'Green Garden Kiriwattuduwa',
     location: 'Kiriwattuduwa',
     pricePerPerch: 'Rs. 200,000',
-    image: '/images/banner-green-garden.jpg',
-    fbImage: 'https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/490659737_1223069016484806_7874382521263503151_n.jpg?stp=dst-jpg_tt6&cstp=mx640x1280&ctp=s640x1280&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=M5LOZ-j8sJUQ7kNvwFzhET5&_nc_oc=Adpv_YZWhmkAGMwVQXq7aeNoZRDljBaaPtKVmPKPyhQpL1na1l1tzPHnmmcAfeSeuaLZLBHv04Sq-dpODOeL6ReW&_nc_zt=23&_nc_ht=scontent.fcmb1-2.fna&_nc_gid=MHvfWU3_pIWnhjssCT_5CA&_nc_ss=7b2a8&oh=00_AQKxm6HvOrtPBO5XWlmmWWzXjChS2KDlb46r4IEGso9blQ&oe=6AAA00C9',
-    link: 'https://www.facebook.com/unioncitydevelopers',
-    amenities: ['⚡ 3-Phase Electricity', '💧 Pipe Water', '📜 Clear Deed']
+    image: '/images/ongoing-green-garden.jpg',
+    link: 'https://www.facebook.com',
+    amenities: ['⚡ 3-Phase Electricity', '💧 Pipe Water', '📜 Clear Deed', '🌿 Serene Natural Surroundings']
   },
   {
     id: 'ongoing-3',
     name: 'Union Greens Bandaragama',
     location: 'Bandaragama',
     pricePerPerch: 'Rs. 350,000',
-    image: '/images/banner-bandaragama.jpg',
-    fbImage: 'https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/486006447_1202560598535648_1451370260080311029_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1444&ctp=s2048x1444&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=O1ZA9TbTIJMQ7kNvwF2Q4EK&_nc_oc=AdqQnfg0hSW0ACtCds6BAZqRhauhpbXYwiRwxox0d1xbpQoVOUXaxY98biVk0zMTlb5IhUoiUz0XFW90P7MPZK0s&_nc_zt=23&_nc_ht=scontent.fcmb1-2.fna&_nc_gid=8GbjDXp2Eqq9m2wuZ0TqSg&_nc_ss=7b2a8&oh=00_AQKDUZ6pxYdQn3b1X5p0qVM0qU1x6SEtzWvvxfddpS5uFA&oe=6AA9F805',
-    link: 'https://www.facebook.com/unioncitydevelopers',
-    amenities: ['⚡ 3-Phase Electricity', '💧 Pipe Water', '📜 Clear Deed']
+    image: '/images/ongoing-bandaragama.jpg',
+    link: 'https://www.facebook.com',
+    amenities: ['⚡ 3-Phase Electricity', '💧 Pipe Water', '📜 Clear Deed', '🛣️ 75m to Main Panadura Road']
+  },
+  {
+    id: 'ongoing-4',
+    name: 'Grand Meridian Malabe',
+    location: 'Malabe',
+    pricePerPerch: 'Rs. 485,000',
+    image: '/images/ongoing-bandaragama.jpg',
+    link: 'https://www.facebook.com',
+    amenities: ['⚡ 3-Phase Electricity', '💧 Pipe Water', '📜 Clear Deed', '🎓 5 mins to SLIIT & IT Hub']
+  },
+  {
+    id: 'ongoing-5',
+    name: 'Imperial Crest Homagama',
+    location: 'Homagama',
+    pricePerPerch: 'Rs. 320,000',
+    image: '/images/ongoing-green-garden.jpg',
+    link: 'https://www.facebook.com',
+    amenities: ['⚡ 3-Phase Electricity', '💧 Pipe Water', '📜 Clear Deed', '🏫 400m to Mahinda Rajapaksa College']
+  },
+  {
+    id: 'ongoing-6',
+    name: 'Royal Palms Panadura',
+    location: 'Panadura',
+    pricePerPerch: 'Rs. 295,000',
+    image: '/images/ongoing-pasyala.jpg',
+    link: 'https://www.facebook.com',
+    amenities: ['⚡ 3-Phase Electricity', '💧 Pipe Water', '📜 Clear Deed', '🌊 Bolgoda Breeze & Galle Rd Access']
   }
 ];
 
@@ -37,12 +61,22 @@ export const INITIAL_COMING_SOON: ComingSoonProject[] = [
   {
     id: 'soon-1',
     location: 'Polgasowita',
-    note: 'New land project launching soon. Stay tuned!'
+    note: 'Sample residential enclave with 10–15 perch plots launching soon. Stay tuned!'
   },
   {
     id: 'soon-2',
     location: 'Godagama',
-    note: 'New land project launching soon. Stay tuned!'
+    note: 'Prime land facing scenic paddy fields, 200m to Highlevel Road. Launching soon!'
+  },
+  {
+    id: 'soon-3',
+    location: 'Padukka',
+    note: 'Exclusive gated residential community close to railway and central expressway.'
+  },
+  {
+    id: 'soon-4',
+    location: 'Gampaha',
+    note: 'Premium suburban plots with rapid access to Colombo-Kandy highway.'
   }
 ];
 
@@ -175,7 +209,7 @@ export const INITIAL_SOLD_OUT: SoldOutProject[] = [
   },
   {
     id: 'sold-union-community-bandaragama',
-    name: 'Union City Community Bandaragama',
+    name: 'Union Home Community Bandaragama',
     location: 'Bandaragama',
     highlights: '75m to Panadura Road • Close to leading schools in town',
     image: '/images/banner-union-community-bandaragama.svg'
